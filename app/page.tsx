@@ -6,7 +6,7 @@ import Link from "next/link"
 
 const GOOGLE_CALENDAR_LINK = "https://calendly.com/michaelogaje033/30min";
 const WHATSAPP_NUMBER = "2348142878380"; // Replace with full number (no +)
-const WHATSAPP_MESSAGE = "Hello! I'd like to learn how your system works for booking calls.";
+const WHATSAPP_MESSAGE = "Hello! I'd like to learn how your client acquisition system works.";
 
 
 
@@ -69,12 +69,13 @@ export default function LandingPage() {
               in Weeks
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
-  In the last 90 days alone, our clients booked <strong>2,000+ qualified calls</strong> and closed <strong>$1.2M+</strong> in new revenue — powered by one predictable system that runs while they sleep.
+            <strong>2,000+</strong> qualified calls. <strong>$1.2M</strong> closed.
             </p>
 
             <p className="text-xl text-muted-foreground leading-relaxed">
-📊 Reports show that businesses leveraging automation today are projected to boost revenue by over 40% and outperform competitors who don’t            </p>
-            <div className="flex flex-col sm:flex-row gap-4">
+            Data shows that agencies using automation boosts revenue by 40%. Don’t get left behind.
+           </p>
+           <div className="flex flex-col sm:flex-row gap-4">
           <Link href={GOOGLE_CALENDAR_LINK} target="_blank" rel="noopener noreferrer">
 
               <Button
