@@ -99,13 +99,21 @@ export default function LandingPage() {
             </div>
             <div className="flex items-center gap-8 pt-4">
               <div className="flex -space-x-2">
-                {[1, 2, 3, 4].map((i) => (
-                  <div
-                    key={i}
-                    className="h-10 w-10 rounded-full bg-gradient-to-br from-blue-400 to-purple-400 border-2 border-background"
-                  />
-                ))}
-              </div>
+  {[
+    "https://randomuser.me/api/portraits/women/46.jpg",
+    "https://randomuser.me/api/portraits/men/38.jpg",
+    "https://randomuser.me/api/portraits/men/32.jpg",
+    "https://randomuser.me/api/portraits/women/45.jpg",
+  ].map((src, i) => (
+    <img
+      key={i}
+      src={src}
+      alt={`Client ${i + 1}`}
+      className="h-10 w-10 rounded-full border-2 border-background object-cover"
+    />
+  ))}
+</div>
+
               <div className="text-sm">
                 <div className="font-semibold">500+ Calls Booked</div>
                 <div className="text-muted-foreground">This month alone</div>
@@ -187,17 +195,16 @@ export default function LandingPage() {
               </div>
             </div>
             <div className="space-y-6 order-1 lg:order-2">
-              <h2 className="text-3xl md:text-4xl font-bold">A Smarter Way to Get Clients</h2>
+              <h2 className="text-3xl md:text-4xl font-bold">The System Behind 30+ Calls a Week</h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                We built a simple system that scrapes and verifies leads from Google Maps, LinkedIn, and niche sites —
-                then runs GPT-powered personalized outreach and follow-ups automatically.
+                Even average offers close $10K+ deals when there’s a consistent flow of qualified leads, strategic outreach & follow-up.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                It runs 24/7, booking calls and bringing in new clients — even when you’re offline.
+                This systems runs 24/7, booking calls and bringing in new clients — even when you’re offline.
               </p>
               <div className="space-y-4 pt-4">
                 {[
-                  "1000+ verified leads weekly sourced from Linkedin, Google maps, niche sites",
+                  "1000+ verified leads weekly — sourced from Linkedin, Google maps, niche sites",
                   "AI-powered personalized outreach at scale trained on winning templates",
                   "Smart follow-up sequences that convert",
                   "Real-time tracking so you can see exactly what’s converting",
@@ -239,13 +246,13 @@ export default function LandingPage() {
                 metric: "1000 Leads",
                 timeframe: "in 7 Days",
                 result: "All handpicked from LinkedIn and Google Maps. No wasted messages, just ICP-fit prospects.",
-                image: "leads.jpg",
+                image: "leads1.jpg",
               },
               {
                 metric: "15+ Calls",
                 timeframe: "in 10 Days",
                 result: "Fully booked calendar with ideal prospects showing real intent.",
-                image: "/Google-calendar-inspo.jpeg",
+                image: "/Google-calendar-inspo1.jpg",
               },
               {
                 metric: "$20K Revenue",
@@ -324,7 +331,7 @@ export default function LandingPage() {
             ].map((testimonial, index) => (
               <Card key={index} className="border-border/50">
                 <CardContent className="p-6 space-y-4">
-                  <div className="text-4xl text-blue-600">"</div>
+                  <div className="text-4xl text-blue-600"></div>
                   <p className="text-muted-foreground leading-relaxed italic">{testimonial.quote}</p>
                   <div className="pt-4 border-t border-border">
                     <div className="font-semibold">{testimonial.author}</div>
@@ -334,6 +341,18 @@ export default function LandingPage() {
               </Card>
             ))}
           </div>
+        </div>
+      </section>
+
+
+
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Here’s How the Call Goes</h2>
+            <p className="text-lg text-muted-foreground">Within minutes, we’ll help you uncover where your outreach and systems are falling short — and how simple tweaks can instantly boost your pipeline. From there, we’ll walk you through what predictable growth looks like for your business.</p>
+          </div>
+
         </div>
       </section>
 
