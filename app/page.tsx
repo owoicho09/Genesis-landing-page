@@ -69,7 +69,7 @@ export default function LandingPage() {
               in Weeks
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
-            <strong>2,000+</strong> qualified calls. <strong>$1.2M</strong> closed.
+            <strong>2,000+</strong> qualified calls booked. <strong>$1.2M</strong> closed.
             </p>
 
             <p className="text-xl text-muted-foreground leading-relaxed">
@@ -226,9 +226,11 @@ export default function LandingPage() {
       <section id="results" className="bg-muted/30 py-20">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Real Results. Real Revenue.</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Client Results</h2>
             <p className="text-lg text-muted-foreground">
-              This system has helped agency founders and B2B SaaS leaders close deals worth $100K+ in just weeks.
+        Real examples of how an agency founder used <span className="font-semibold text-foreground">Genesis Ai </span>
+         to book calls and closed  <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent font-semibold"> $20K in just 2 weeks</span> —
+  without the grind, the guesswork, or the ghosting.
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
@@ -236,20 +238,20 @@ export default function LandingPage() {
               {
                 metric: "1000 Leads",
                 timeframe: "in 7 Days",
-                result: "Achieved 70% reply rate and $100K+ in new deals",
+                result: "All handpicked from LinkedIn and Google Maps. No wasted messages, just ICP-fit prospects.",
                 image: "leads.jpg",
               },
               {
-                metric: "30+ Calls",
-                timeframe: "per Week",
-                result: "Consistent pipeline of qualified prospects ready to buy",
+                metric: "15+ Calls",
+                timeframe: "in 10 Days",
+                result: "Fully booked calendar with ideal prospects showing real intent.",
                 image: "/Google-calendar-inspo.jpeg",
               },
               {
-                metric: "$120K Revenue",
-                timeframe: "in 90 Days",
-                result: "From zero to six figures with automated outreach",
-                image: "/revenue3.jpg",
+                metric: "$20K Revenue",
+                timeframe: "in 14 Days",
+                result: "From zero to $20K in 14 days — powered by Genesis consistent lead gen, outreach, and smart follow-ups.",
+                image: "/revenue5.jpg",
               },
             ].map((study, index) => (
               <Card key={index} className="overflow-hidden border-border/50 hover:shadow-lg transition-shadow">
